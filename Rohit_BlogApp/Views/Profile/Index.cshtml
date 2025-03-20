@@ -1,0 +1,75 @@
+﻿@model Rohit_BlogApp.Models.User
+
+@{
+    ViewData["Title"] = "User Profile";
+    var currentUserId = Context.Session.GetInt32("UserId");
+}
+
+<div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <!-- User Info -->
+    <div class="text-center mb-6 sticky top-2 bg-gray-200 p-4 shadow">
+        <h1 class="text-3xl font-bold">@Model.Username</h1>
+        <p class="text-gray-600">Email: @Model.Email</p>
+        <p class="text-gray-600">Total Posts: @Model.Posts.Count()</p>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- User Posts -->
+    <h2 class="text-2xl font-bold mb-4">Posts by @Model.Username</h2>
+    <div class="grid grid-cols-2 gap-2">
+        @foreach (var post in Model.Posts)
+        {
+            <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">@post.Title</h3>
+
+                <!-- Limited Content -->
+                <p class="text-gray-700 overflow-hidden max-h-20 line-clamp-3" id="post-content-@post.Id">
+                    @post.Content
+                </p>
+
+                <button onclick="toggleContent('@post.Id')" class="text-blue-500 hover:underline mt-2">View More</button>
+
+                @if (!string.IsNullOrEmpty(post.PostUrl))
+                {
+                    <img class="w-full mt-2 rounded" src="@post.PostUrl" alt="Post Image" />
+                }
+
+                <p class="text-sm text-gray-500 mt-2">Posted on: @post.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+                <a href="/Post/Post_Detail/@post.Id" class="text-blue-500 hover:underline">Read More</a>
+
+                <!-- Edit & Delete Buttons - Show only if current user is the post owner -->
+                @if (currentUserId == post.UserId)
+                {
+                    <div class="flex justify-end space-x-2 mt-4">
+                        <a href="/Post/Edit/@post.Id" class="text-yellow-500 hover:underline">Edit</a>
+                        <form method="post" action="/Post/Delete/@post.Id" onsubmit="return confirm('Are you sure you want to delete this post?');">
+                            <button type="submit" class="text-red-500 hover:underline">Delete</button>
+                        </form>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    function toggleContent(postId) {
+        const content = document.getElementById('post-content-' + postId);
+        if (content.classList.contains('line-clamp-3')) {
+            content.classList.remove('line-clamp-3', 'max-h-20', 'overflow-hidden');
+        } else {
+            content.classList.add('line-clamp-3', 'max-h-20', 'overflow-hidden');
+        }
+    }
+</script>
+
+<style>
+    /* Tailwind doesn’t have line-clamp out of the box, so adding it here */
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+</style>

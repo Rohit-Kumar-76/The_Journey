@@ -1,0 +1,137 @@
+﻿@{
+    var username = Context.Session.GetString("Username") ?? "Guest";
+    var email = Context.Session.GetString("Email") ?? "guest@example.com";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-100 mx-auto">
+    <div class="flex h-screen relative">
+        <!-- Mobile Header -->
+        <div class="md:hidden fixed top-0 w-full bg-white shadow-md flex justify-between items-center p-4 z-10">
+            <button id="menuButton" class="text-gray-700 text-2xl">&#9776;</button>
+            <img src="/Img/logo-white.png" alt="logo" class="w-1/3" />
+            <button id="notificationButton" class="text-gray-700 text-2xl relative">
+                &#128276;
+                <span id="notificationCount" class="bg-red-500 text-white text-xs rounded-full px-2 absolute top-0 right-0 hidden"></span>
+            </button>
+        </div>
+
+        <!-- Sidebar -->
+        <aside id="sidebar" class="w-1/2 z-[10] lg:w-[20%] bg-white border-r shadow-md p-4 mt-[70px] lg:mt-0 fixed h-full flex-col hidden md:flex">
+            <img src="/Img/logo-white.png" class="text-2xl font-bold text-center mb-6 rounded-sm" />
+            <div class="mb-6">
+                <p class="text-lg font-semibold">@username</p>
+                <p class="text-sm text-gray-500">@email</p>
+            </div>
+            <ul class="space-y-4 flex-grow">
+                <li><a href="/Home/Index" class="block text-lg text-gray-700 hover:text-blue-500">Posts</a></li>
+                <li><a href="/Profile/Index/" class="block text-lg text-gray-700 hover:text-blue-500">Profile</a></li>
+                <li><a asp-controller="Post" asp-action="Create" class="block text-lg text-gray-700 hover:text-blue-500">Create Post</a></li>
+            </ul>
+            <div>
+                <form asp-controller="Home" asp-action="Logout">
+                    <button type="submit" class="block w-full text-lg bg-gray-200 p-2 rounded-sm text-red-500 hover:text-red-700">Logout</button>
+                </form>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main role="main" class="pb-3 mx-auto w-full md:w-[50%] px-4 mt-16 md:mt-0 relative">
+            @RenderBody()
+        </main>
+
+        <!-- Notifications -->
+        <aside id="notifications" class="w-1/2 lg:w-[20%] bg-white border-l mt-[70px] lg:mt-0 shadow-md p-4 fixed h-full right-0 flex-col hidden md:flex">
+            <h2 class="text-xl font-bold mb-4">Notifications</h2>
+            <div id="notificationList" class="space-y-2 flex-grow overflow-y-auto">
+                <p class="text-sm text-gray-700">You liked "Tailwind CSS Tips"</p>
+                <p class="text-sm text-gray-700">Commented on "Learning Tailwind"</p>
+                <p class="text-sm text-gray-700">New post: "My Tailwind Journey"</p>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const notificationButton = document.getElementById('notificationButton');
+        const sidebar = document.getElementById('sidebar');
+        const notifications = document.getElementById('notifications');
+        const notificationCount = document.getElementById('notificationCount');
+        const notificationList = document.getElementById('notificationList');
+
+        // Toggle Sidebar
+        menuButton?.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden');
+            notifications.classList.add('hidden');
+        });
+
+        // Toggle Notifications
+        notificationButton?.addEventListener('click', () => {
+            notifications.classList.toggle('hidden');
+            sidebar.classList.add('hidden');
+            notificationCount.classList.add('hidden');
+        });
+
+        // Close on Outside Click
+        document.addEventListener('click', (e) => {
+            if (!sidebar.contains(e.target) && !menuButton.contains(e.target) && window.innerWidth < 768) {
+                sidebar.classList.add('hidden');
+            }
+            if (!notifications.contains(e.target) && !notificationButton.contains(e.target) && window.innerWidth < 768) {
+                notifications.classList.add('hidden');
+            }
+        });
+
+        // Dynamic Notification Loading (Example)
+        function loadNotifications() {
+            fetch('/Notification/GetNotifications')
+                .then(response => response.json())
+                .then(data => {
+                    notificationList.innerHTML = '';
+                    if (data.length > 0) {
+                        notificationCount.textContent = data.length;
+                        notificationCount.classList.remove('hidden');
+                        data.forEach(notification => {
+                            const p = document.createElement('p');
+                            p.classList.add('text-sm', 'text-gray-700');
+                            p.textContent = notification.message;
+                            notificationList.appendChild(p);
+                        });
+                    } else {
+                        notificationCount.classList.add('hidden');
+                        const noNotification = document.createElement('p');
+                        noNotification.classList.add('text-sm', 'text-gray-700');
+                        noNotification.textContent = 'No new notifications';
+                        notificationList.appendChild(noNotification);
+                    }
+                });
+        }
+
+               function likePost(postId) {
+            fetch('/Post/Like?postId=' + postId, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('like-count-' + postId).innerText = data.likes;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadNotifications();
+            setInterval(loadNotifications, 10000);
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿@model Rohit_BlogApp.Models.Post
+
+
+@{
+    ViewData["Title"] = "Post Details";
+    var currentUserId = Context.Session.GetInt32("UserId");
+}
+
+<div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+    <!-- Post Details -->
+    <h1 class="text-3xl font-bold">@Model.Title</h1>
+    <p class="text-gray-600 mb-4">Posted by: <span class="font-semibold">@Model.User.Username</span> on @Model.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+
+    @if (!string.IsNullOrEmpty(Model.PostUrl))
+    {
+        <img class="w-full mb-4 rounded" src="@Model.PostUrl" alt="Post Image" />
+    }
+
+    <p class="text-gray-800">@Model.Content</p>
+
+    <hr class="my-6">
+
+    <!-- Like & Comment Section -->
+    <div class="mt-4 flex items-center justify-between">
+        <div class="flex space-x-4">
+            <button onclick="likePost('@Model.Id')" class="text-gray-500 hover:text-red-500">
+                ❤️ <span id="like-count-@Model.Id">@Model.Likes?.Count()</span>
+            </button>
+            <a href="#comments-section" class="text-gray-500 hover:text-blue-500">
+                💬 Comments (<span>@Model.Comments?.Count()</span>)
+            </a>
+        </div>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Comments Section -->
+    <h2 id="comments-section" class="text-2xl font-bold mb-4">Comments (@Model.Comments.Count)</h2>
+    <div class="space-y-4">
+        @if (Model.Comments.Any())
+        {
+            @foreach (var comment in Model.Comments)
+            {
+                <div class="bg-gray-100 p-3 rounded-lg shadow">
+                    <p class="text-sm text-gray-600 mb-1">
+                        <span class="font-bold">@(comment.User != null ? comment.User.Username : "Unknown")</span> commented:
+                    </p>
+                    <p class="text-gray-800">@comment.Content</p>
+                    <p class="text-xs text-gray-500">@comment.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p class="text-gray-500">No comments yet. Be the first to comment!</p>
+        }
+    </div>
+
+    <!-- Add Comment -->
+    <form method="post" action="/Post/AddComment" class="mt-6">
+        <input type="hidden" name="PostId" value="@Model.Id" />
+        <textarea name="Content" rows="3" class="w-full p-2 border rounded-lg" placeholder="Write a comment..." required></textarea>
+        <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Comment</button>
+    </form>
+
+    <!-- Back Button -->
+    <div class="mt-6">
+        <a href="/Profile/Index/" class="text-blue-500 hover:underline">Back to Profile</a>
+    </div>
+</div>
+
+

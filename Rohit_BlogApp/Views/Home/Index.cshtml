@@ -1,0 +1,64 @@
+﻿@model IEnumerable<Rohit_BlogApp.Models.Post>
+
+@{
+    ViewData["Title"] = "Home";
+    // Context.Session.GetInt32("UserId")
+}
+
+<h1 class="text-3xl font-bold mb-6 text-center bg-gray-200 p-3 sticky top-1 rounded">Blogs</h1>
+<div class="space-y-6">
+    @foreach (var post in Model)
+    {
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <!-- Post Header -->
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-lg font-bold">
+                        @(post.User != null ? post.User.Username : "Unknown User")
+                    </h2>
+                    <p class="text-sm text-gray-500">
+                        @(post.CreatedAt != null ? post.CreatedAt.ToString("MMM dd, yyyy hh:mm tt") : "No Date")
+                    </p>
+                </div>
+               
+            </div>
+
+            <!-- Post Content -->
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold">@post.Title</h3>
+                <p class="text-gray-700 line-clamp-3 overflow-hidden">@post.Content</p>
+
+                @if (!string.IsNullOrEmpty(post.PostUrl))
+                {
+                    <img src="@post.PostUrl" alt="Post Image" class="mt-4 w-full rounded-lg">
+                }
+                <a href="/Post/Post_Detail/@post.Id" class="text-blue-500 hover:underline">Read More</a>
+            </div>
+
+            <!-- Like & Comment Section -->
+            <div class="mt-4 flex items-center justify-between">
+                <div class="flex space-x-4">
+                    <button onclick="likePost(@post.Id)" id="like-btn-@post.Id" class="text-blue-500 hover:underline">
+                        ❤️ Like (<span id="like-count-@post.Id">@post.Likes</span>)
+                    </button>
+                    <a href="/Post/Post_Detail/@post.Id" class="text-gray-500 hover:text-blue-500">
+                        💬 Comments (<span>@post.Comments?.Count()</span>)
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .line-clamp-3 {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
+
+
