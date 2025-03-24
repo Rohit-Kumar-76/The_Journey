@@ -1,0 +1,16 @@
+/* Tailwind doesn’t have line-clamp out of the box, so adding it here */
+
+
+@keyframes slide-left {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.animate-slide-left {
+    animation: slide-left 10s linear infinite;
+}

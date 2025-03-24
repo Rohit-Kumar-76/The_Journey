@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Release\\net9.0\\scopedcss\\projectbundle\\Rohit_BlogApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Rohit_BlogApp.0wfduhgcot.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\Rohit1.jpg",
+      "PackagePath": "staticwebassets\\Img\\Rohit1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel.png",
+      "PackagePath": "staticwebassets\\Img\\cancel.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel1.png",
+      "PackagePath": "staticwebassets\\Img\\cancel1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\edit.png",
+      "PackagePath": "staticwebassets\\Img\\edit.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\logo-color.png",
+      "PackagePath": "staticwebassets\\Img\\logo-color.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\logo-white.png",
+      "PackagePath": "staticwebassets\\Img\\logo-white.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\profile-icon.jpg",
+      "PackagePath": "staticwebassets\\Img\\profile-icon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\upload.png",
+      "PackagePath": "staticwebassets\\Img\\upload.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\00e65f6f-de23-4bca-9678-c6bb3eac19e0.png",
+      "PackagePath": "staticwebassets\\Uploads\\00e65f6f-de23-4bca-9678-c6bb3eac19e0.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\0f498574-705e-4565-a179-4b792aea4aab.png",
+      "PackagePath": "staticwebassets\\Uploads\\0f498574-705e-4565-a179-4b792aea4aab.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\1b9bf3d5-6e80-4101-bb5e-43b00fbb9900.png",
+      "PackagePath": "staticwebassets\\Uploads\\1b9bf3d5-6e80-4101-bb5e-43b00fbb9900.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\382ddf69-4e8b-4dd4-8f7a-736624f36fae.png",
+      "PackagePath": "staticwebassets\\Uploads\\382ddf69-4e8b-4dd4-8f7a-736624f36fae.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\5518546e-ed8c-4227-be11-be3ca766c7d0.png",
+      "PackagePath": "staticwebassets\\Uploads\\5518546e-ed8c-4227-be11-be3ca766c7d0.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\578477fc-6331-49e5-a80d-d7714a17cd4c.png",
+      "PackagePath": "staticwebassets\\Uploads\\578477fc-6331-49e5-a80d-d7714a17cd4c.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\70efe9e3-4ec1-46b9-8d45-a9ef5074a8e7.png",
+      "PackagePath": "staticwebassets\\Uploads\\70efe9e3-4ec1-46b9-8d45-a9ef5074a8e7.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\71cbea7a-4011-49d1-a779-1ad3f3688ab0.png",
+      "PackagePath": "staticwebassets\\Uploads\\71cbea7a-4011-49d1-a779-1ad3f3688ab0.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\85e1e986-8114-446a-8667-ac1e43955844.png",
+      "PackagePath": "staticwebassets\\Uploads\\85e1e986-8114-446a-8667-ac1e43955844.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\8b75c30f-2317-4b6d-8c6f-d1819e189a84.png",
+      "PackagePath": "staticwebassets\\Uploads\\8b75c30f-2317-4b6d-8c6f-d1819e189a84.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\9320807c-4f93-442a-996d-d1783733e791.png",
+      "PackagePath": "staticwebassets\\Uploads\\9320807c-4f93-442a-996d-d1783733e791.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\d7499939-ef27-4107-86b3-a3cbee05e92c.png",
+      "PackagePath": "staticwebassets\\Uploads\\d7499939-ef27-4107-86b3-a3cbee05e92c.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\e8634e63-fdfd-402b-a871-448ad8f46f69.png",
+      "PackagePath": "staticwebassets\\Uploads\\e8634e63-fdfd-402b-a871-448ad8f46f69.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg",
+      "PackagePath": "staticwebassets\\UserProfileImg\\272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\36545232-7b28-41d0-8c4c-cd8e6d71c670.png",
+      "PackagePath": "staticwebassets\\UserProfileImg\\36545232-7b28-41d0-8c4c-cd8e6d71c670.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\38aed100-77fd-4588-a798-da5de539ead8.png",
+      "PackagePath": "staticwebassets\\UserProfileImg\\38aed100-77fd-4588-a798-da5de539ead8.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg",
+      "PackagePath": "staticwebassets\\UserProfileImg\\52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\59e6312d-726e-47a8-8a2f-c9e023835570.jpg",
+      "PackagePath": "staticwebassets\\UserProfileImg\\59e6312d-726e-47a8-8a2f-c9e023835570.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\8559773a-bcae-45f9-8cb2-ec20087243c9.png",
+      "PackagePath": "staticwebassets\\UserProfileImg\\8559773a-bcae-45f9-8cb2-ec20087243c9.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\86fb87e3-f4e3-4c33-8563-d88b42d7548d.png",
+      "PackagePath": "staticwebassets\\UserProfileImg\\86fb87e3-f4e3-4c33-8563-d88b42d7548d.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\e9a822e3-4ea5-4751-9b24-439209d01bd1.png",
+      "PackagePath": "staticwebassets\\UserProfileImg\\e9a822e3-4ea5-4751-9b24-439209d01bd1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.Rohit_BlogApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.Rohit_BlogApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.Rohit_BlogApp.props",
+      "PackagePath": "build\\Rohit_BlogApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.Rohit_BlogApp.props",
+      "PackagePath": "buildMultiTargeting\\Rohit_BlogApp.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.Rohit_BlogApp.props",
+      "PackagePath": "buildTransitive\\Rohit_BlogApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
