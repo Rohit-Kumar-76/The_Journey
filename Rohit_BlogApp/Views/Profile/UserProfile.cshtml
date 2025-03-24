@@ -1,0 +1,61 @@
+﻿@model ProfileViewModel
+
+<div class="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
+    <!-- User Profile Section -->
+    <div class="flex items-center mb-6 bg-gray-200 shadow p-4 rounded relative ">
+        <div class="flex-1">
+            <h1 class="text-xl lg:text-3xl font-bold text-gray-800 text-right">@Model.User.Username's Profile</h1>
+            <div class="flex flex-col lg:flex-row   space-x-3 xl:h-[200px]">
+                <div class="mx-auto w-[200px] h-[200px]  lg:w-[200px] xl:h-[200px]  rounded-full mt-2 overflow-hidden">
+                    @if (!string.IsNullOrEmpty(@Model.User.ProfileUrl))
+                    {
+                        <img src="@Model.User.ProfileUrl " alt="img" class="w-full   " />
+                    }
+                    else{
+                        <img src="/Img/profile-icon.jpg" alt="img" class="w-full h-full rounded-lg" />
+                    }
+                </div>
+                <div class="p-4 ">
+                    <h1 class="text-2xl lg:text-3xl font-bold text-gray-800">@Model.User.Username</h1>
+                    <p class="text-gray-600">@Model.User.Email</p>
+                    <h3>Bio </h3>
+                    <p class="text-gray-600">@Model.User.UserBio</p>
+                </div>
+           </div>
+        </div>
+        @if (Model.IsOwnProfile)
+        {
+            <a href="@Url.Action("Index", "Profile")" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 absolute bottom-0 right-0">Edit Profile</a>
+        }
+    </div>
+
+    <!-- Posts Section -->
+    <h2 class="text-2xl font-semibold text-gray-700 mb-4">Posts</h2>
+    <div class=" grid  gap-2">
+        @foreach (var post in Model.Posts)
+        {
+            <div class="p-4 border rounded-lg shadow-sm bg-gray-50 hover:shadow-md transition">
+                <!-- Post Image -->
+                @if (!string.IsNullOrEmpty(post.PostUrl))
+                {
+                    <img src="@Url.Content(post.PostUrl)" alt="Post Image" class="w-full h-48 object-cover rounded-lg mb-4">
+                }
+
+                <!-- Post Title & Content -->
+                <h4 class="text-lg font-medium text-gray-900">@post.Title</h4>
+                <p class="text-gray-700 mt-2 line-clamp-2">@post.Content</p>
+
+                <!-- Post Details -->
+                <div class="flex justify-between items-center mt-4">
+                    <small class="text-gray-500">Posted on @post.CreatedAt.ToString("dd MMM yyyy")</small>
+
+                    <!-- View Details Button -->
+                    <a href="@Url.Action("Post_Detail", "Post", new { title = post.Title.Replace(" ", "-") })" class="text-blue-500 hover:underline text-right">
+                        View
+                    </a>
+
+                </div>
+            </div>
+        }
+    </div>
+</div>

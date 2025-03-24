@@ -1,0 +1,50 @@
+﻿@using System.Linq
+
+@{
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+
+}
+<h2 class="text-3xl font-semibold mb-4">User Details</h2>
+
+<div class="bg-white rounded-lg shadow-md p-4 mb-6">
+   
+    <p><strong>Username:</strong> @Model.Username</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Total Posts:</strong> @Model.Posts.Count</p>
+    <p><strong>Total Comments:</strong> @Model.Comments.Count</p>
+</div>
+
+
+<h3 class="text-xl font-medium mb-4">User's Posts</h3>
+<div class="bg-white rounded-lg shadow-md p-4">
+
+    @if (Model.Posts.Count > 0)
+    {
+        <ul>
+            @foreach (var post in Model.Posts)
+            {
+                <li class="border-b p-4 flex space-x-4">
+                    <!-- Post Image -->
+                    <img src="@post.PostUrl" alt="Post Image" class="w-24 h-24 object-cover rounded-lg shadow-md">
+
+                    <!-- Post Details -->
+                    <div>
+                        <a href="/Admin/Post_Details/@post.Id" class="text-blue-500 text-xl font-semibold hover:underline">
+                            @post.Title
+                        </a>
+                        <p class="text-gray-700 mt-2">
+                            @post.Content
+                        </p>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No posts available.</p>
+    }
+
+
+  
+</div>

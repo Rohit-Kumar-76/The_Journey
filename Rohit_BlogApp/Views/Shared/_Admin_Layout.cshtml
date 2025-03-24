@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Admin Dashboard</title>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-gray-800 text-white flex flex-col  h-full">
+            <h1 class="text-2xl font-bold p-4">Admin Panel</h1>
+            <nav class="flex-grow">
+                <a href="/Admin/Dash" class="block p-4 hover:bg-gray-700 shadow">Dashboard</a>
+                <a href="/Admin/Users" class="block p-4 hover:bg-gray-700 shadow">Users</a>
+                <a href="/Admin/Posts" class="block p-4 hover:bg-gray-700 shadow">Posts</a>
+                <a href="/Admin/Change_pass" class="block p-4 hover:bg-gray-700 shadow">Update Password</a>
+            </nav>
+            <a href="/Admin/Logout" class="block p-4 bg-red-600 hover:bg-red-700">Logout</a>
+        </div>
+        <!-- Main Content -->
+        <main class="w-full overflow-y-auto flex-1">
+
+            <h1 class="text-3xl font-bold  text-center p-2 bg-gray-900 sticky  text-white top-0">Admin Dashboard</h1>
+        <div class=" p-4 overflow-auto">
+            @RenderBody()
+        </div>
+        </main>
+    </div>
+</body>
+</html>

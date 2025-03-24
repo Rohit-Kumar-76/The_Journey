@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Hosting;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
 
 namespace Rohit_BlogApp.Models
 {
@@ -10,14 +11,16 @@ namespace Rohit_BlogApp.Models
 
         public int Id { get; set; }
 
+
         [Required]
         [StringLength(100)]
         public string Username { get; set; }
-
+       
         [Required]
         [EmailAddress]
         public string Email { get; set; }
-
+        public string? ProfileUrl { get; set; }  
+        public string? UserBio {  get; set; }   
         [Required]
         public string Password { get; set; }
 

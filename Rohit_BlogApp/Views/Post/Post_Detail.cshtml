@@ -8,9 +8,26 @@
 
 <div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
     <!-- Post Details -->
-    <h1 class="text-3xl font-bold">@Model.Title</h1>
-    <p class="text-gray-600 mb-4">Posted by: <span class="font-semibold">@Model.User.Username</span> on @Model.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+      <div class="flex space-x-3">
+        @if (!string.IsNullOrEmpty(Model.User.ProfileUrl))
+        {
+            <a href="/Profile/UserProfile/@Model.User.Username">
+                <div class="w-14 h-14 rounded-full" style="background: url('@Model.User.ProfileUrl') center center / cover no-repeat;"> </div>
+            </a>
 
+
+           
+        }
+        else
+        {
+            <div class="w-14 h-14 rounded-full" style="background: url('/Img//profile-icon.jpg') center center / cover no-repeat; border:2px solid black"></div>
+        }
+            <div>
+            <h1 class="text-3xl font-bold">@Model.Title</h1>
+            <p class="text-gray-600 mb-4">Posted by: <span class="font-semibold">@Model.User.Username</span> on @Model.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+
+            </div>
+      </div>
     @if (!string.IsNullOrEmpty(Model.PostUrl))
     {
         <img class="w-full mb-4 rounded" src="@Model.PostUrl" alt="Post Image" />
@@ -55,13 +72,14 @@
             <p class="text-gray-500">No comments yet. Be the first to comment!</p>
         }
     </div>
-
+    <h4 class="text-lg text-red-600 p-2 text-center">@TempData["CommentError"]</h4>
     <!-- Add Comment -->
     <form method="post" action="/Post/AddComment" class="mt-6">
-        <input type="hidden" name="PostId" value="@Model.Id" />
-        <textarea name="Content" rows="3" class="w-full p-2 border rounded-lg" placeholder="Write a comment..." required></textarea>
+        <input type="hidden" name="title" value="@Model.Title" />
+        <textarea name="content" rows="3" class="w-full p-2 border rounded-lg" placeholder="Write a comment..." required></textarea>
         <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Comment</button>
     </form>
+
 
     <!-- Back Button -->
     <div class="mt-6">

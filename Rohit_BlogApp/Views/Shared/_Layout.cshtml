@@ -1,7 +1,9 @@
 ﻿@{
     var username = Context.Session.GetString("Username") ?? "Guest";
     var email = Context.Session.GetString("Email") ?? "guest@example.com";
+    var profileUrl = Context.Session.GetString("ProfileUrl");
 }
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +17,7 @@
 <body class="bg-gray-100 mx-auto">
     <div class="flex h-screen relative">
         <!-- Mobile Header -->
-        <div class="md:hidden fixed top-0 w-full bg-white shadow-md flex justify-between items-center p-4 z-10">
+        <div class="xl:hidden fixed top-0 w-full bg-white shadow-md flex justify-between items-center p-4 z-10">
             <button id="menuButton" class="text-gray-700 text-2xl">&#9776;</button>
             <img src="/Img/logo-white.png" alt="logo" class="w-1/3" />
             <button id="notificationButton" class="text-gray-700 text-2xl relative">
@@ -25,31 +27,69 @@
         </div>
 
         <!-- Sidebar -->
-        <aside id="sidebar" class="w-1/2 z-[10] lg:w-[20%] bg-white border-r shadow-md p-4 mt-[70px] lg:mt-0 fixed h-full flex-col hidden md:flex">
-            <img src="/Img/logo-white.png" class="text-2xl font-bold text-center mb-6 rounded-sm" />
+        <aside id="sidebar" class="w-1/2 z-[10] xl:w-[20%] bg-white border-r shadow-md p-4 mt-[70px] lg:mt-0 fixed h-full flex-col transform -translate-x-full transition-transform duration-300 ease-in-out xl:translate-x-0">
+
+            <!-- Logo -->
+            <img src="/Img/logo-white.png" class="text-2xl font-bold text-center mb-3 rounded-sm " />
+
+          @* @if(@Model.ProfileUrl!=null) *@
+          @* { *@
+          @*       <div class="w-[100%]  h-[190px] p-2 bg-gray-300 overflow-hidden"> *@
+          @*           <img src="@profileUrl" class="block mx-auto h-full rounded-md  w-full p-1  " alt="profile" /> *@
+          @*       </div> *@
+          @* }else{ *@
+          @*       <div class="w-[100%]  h-[190px] p-2 bg-gray-300 overflow-hidden"> *@
+          @*           <img src="/Img/profile-icon.jpg" class="block mx-auto h-full rounded-md  w-full p-1  " alt="profile" /> *@
+          @*       </div> *@
+          @* } *@
+           
+            <!-- User Info -->
             <div class="mb-6">
-                <p class="text-lg font-semibold">@username</p>
+                <p class="text-xl font-semibold"> <a href="/Profile/Index"> @username</a></p>
                 <p class="text-sm text-gray-500">@email</p>
             </div>
+
+            <!-- Search Bar -->
+            <form asp-controller="Home" asp-action="Search" method="get" class="mb-6">
+                <div class="relative">
+                    <input type="text" name="username" placeholder="Search User..." required
+                           class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
+                    <button type="submit" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-blue-500">
+                        🔍
+                    </button>
+                </div>
+            </form>
+
+            <!-- Navigation Links -->
             <ul class="space-y-4 flex-grow">
                 <li><a href="/Home/Index" class="block text-lg text-gray-700 hover:text-blue-500">Posts</a></li>
+                <hr />
                 <li><a href="/Profile/Index/" class="block text-lg text-gray-700 hover:text-blue-500">Profile</a></li>
+                <hr />
                 <li><a asp-controller="Post" asp-action="Create" class="block text-lg text-gray-700 hover:text-blue-500">Create Post</a></li>
+                <hr />
             </ul>
-            <div>
+
+            <!-- Logout Button -->
+            <div class="flex-end item-end">
                 <form asp-controller="Home" asp-action="Logout">
-                    <button type="submit" class="block w-full text-lg bg-gray-200 p-2 rounded-sm text-red-500 hover:text-red-700">Logout</button>
+                    <button type="submit" class="block w-full text-lg bg-gray-200 p-2 rounded-sm text-red-500 hover:text-red-700">
+                        Logout
+                    </button>
                 </form>
             </div>
+
         </aside>
 
+
         <!-- Main Content -->
-        <main role="main" class="pb-3 mx-auto w-full md:w-[50%] px-4 mt-16 md:mt-0 relative">
+        <main role="main" class="pb-3 mx-auto w-full xl:w-[60%] px-4 mt-16 md:mt-0 relative h-auto">
             @RenderBody()
         </main>
 
         <!-- Notifications -->
-        <aside id="notifications" class="w-1/2 lg:w-[20%] bg-white border-l mt-[70px] lg:mt-0 shadow-md p-4 fixed h-full right-0 flex-col hidden md:flex">
+        <aside id="notifications" class="w-1/2 xl:w-[20%] bg-white border-l mt-[70px] lg:mt-0 shadow-md p-4 fixed h-full right-0 flex-col transform translate-x-full transition-transform duration-300 ease-in-out xl:translate-x-0">
+
             <h2 class="text-xl font-bold mb-4">Notifications</h2>
             <div id="notificationList" class="space-y-2 flex-grow overflow-y-auto">
                 <p class="text-sm text-gray-700">You liked "Tailwind CSS Tips"</p>
@@ -59,8 +99,61 @@
         </aside>
     </div>
 
+	<script src="~/js/site.js"></script>
+
+
     <script>
-        const menuButton = document.getElementById('menuButton');
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check all posts' content
+            const posts = document.querySelectorAll('[id^="post-content-"]');
+            posts.forEach(post => {
+                // If content overflows, show "View More" button
+                if (post.scrollHeight > post.clientHeight) {
+                    const postId = post.getAttribute('id').split('-')[2];
+                    const viewMoreBtn = document.getElementById('view-more-' + postId);
+                    if (viewMoreBtn) {
+                        viewMoreBtn.style.display = 'inline';
+                    }
+                }
+            });
+        });
+
+        function likePost(title) {
+            fetch(`/Post/Like?title=${encodeURIComponent(title)}`, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Update the like count on the page
+                document.getElementById('like-count').innerText = data.likes;
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+
+
+
+        function toggleContent(postId) {
+            const content = document.getElementById('post-content-' + postId);
+            const button = document.getElementById('view-more-' + postId);
+
+            if (content.classList.contains('line-clamp-3')) {
+                content.classList.remove('line-clamp-3', 'max-h-20', 'overflow-hidden');
+                button.textContent = 'View Less';
+            } else {
+                content.classList.add('line-clamp-3', 'max-h-20', 'overflow-hidden');
+                button.textContent = 'View More';
+            }
+        }
+
+
+    </script>
+
+    <script>
+                const menuButton = document.getElementById('menuButton');
         const notificationButton = document.getElementById('notificationButton');
         const sidebar = document.getElementById('sidebar');
         const notifications = document.getElementById('notifications');
@@ -69,16 +162,16 @@
 
         // Toggle Sidebar
         menuButton?.addEventListener('click', () => {
-            sidebar.classList.toggle('hidden');
-            notifications.classList.add('hidden');
+            sidebar.classList.toggle('-translate-x-full');
+            notifications.classList.add('translate-x-full');
         });
 
         // Toggle Notifications
         notificationButton?.addEventListener('click', () => {
-            notifications.classList.toggle('hidden');
-            sidebar.classList.add('hidden');
-            notificationCount.classList.add('hidden');
+            notifications.classList.toggle('translate-x-full');
+            sidebar.classList.add('-translate-x-full');
         });
+
 
         // Close on Outside Click
         document.addEventListener('click', (e) => {
@@ -115,21 +208,25 @@
                 });
         }
 
-               function likePost(postId) {
+        function likePost(postId) {
             fetch('/Post/Like?postId=' + postId, {
                 method: 'POST'
             })
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('like-count-' + postId).innerText = data.likes;
-            })
-            .catch(error => console.error('Error:', error));
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('like-count-' + postId).innerText = data.likes;
+                })
+                .catch(error => console.error('Error:', error));
         }
 
         document.addEventListener('DOMContentLoaded', () => {
             loadNotifications();
             setInterval(loadNotifications, 10000);
         });
+
+
+
+
     </script>
     @RenderSection("Scripts", required: false)
 

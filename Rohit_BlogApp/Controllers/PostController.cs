@@ -27,7 +27,7 @@ namespace Rohit_BlogApp.Controllers
 
             _context.Posts.Remove(post);
             _context.SaveChanges();
-            TempData["SuccessMessage"] = "Post deleted successfully!";
+            //TempData["SuccessMessage"] = "Post deleted successfully!";
 
             return RedirectToAction("Index", "Home");
         }
@@ -42,32 +42,25 @@ namespace Rohit_BlogApp.Controllers
             return View(post);
         }
 
-
         [HttpPost]
-        public IActionResult Edit(Post post)
+        public IActionResult Edit(int id, string title, string content)
         {
-            if (ModelState.IsValid)
+            var existingPost = _context.Posts.Find(id);
+            if (existingPost == null)
             {
-
-                var existingPost = _context.Posts.Find(post.Id);
-                if (existingPost != null)
-                {
-                    // Only update the fields you want to edit
-                    existingPost.Title = post.Title;
-                    existingPost.Content = post.Content;
-
-                    // Keep existing data untouched
-                    existingPost.User = existingPost.User;
-                    existingPost.Likes = existingPost.Likes;
-                    existingPost.Comments = existingPost.Comments;
-
-                    _context.SaveChanges();
-                    TempData["Message"] = "Post updated successfully!";
-                    return RedirectToAction("Profile", "Post");
-                }
+                return NotFound();
             }
-            return View(post);
+
+            // Update only the necessary fields
+            existingPost.Title = title;
+            existingPost.Content = content;
+
+            _context.SaveChanges();
+            TempData["Message"] = "Post updated successfully!";
+            return RedirectToAction("Index", "Profile");
         }
+
+
 
         public IActionResult Create()
         {
@@ -87,6 +80,22 @@ namespace Rohit_BlogApp.Controllers
             if (userId == null)
             {
                 TempData["ErrorMessage"] = "Please log in to create a post.";
+                return RedirectToAction("Index", "Home");
+            }
+
+            // 🚨 Banned Words List
+            var bannedWords = new List<string> {
+        "sex", "porn", "Chod","Chutiya","bsdk","Bhosdike","gandu","pagal","Lund","Laura","mc","bc","rape", "violence", "kill", "murder", "nude", "abuse", "fuck", "shit", "bitch"
+    };
+
+            // 🚦 Check for Banned Words
+            bool containsBannedWords(string text) =>
+                bannedWords.Any(word => text.IndexOf(word, StringComparison.OrdinalIgnoreCase) >= 0);
+
+            if (containsBannedWords(title) || containsBannedWords(content))
+            {
+                TempData["ErrorMessage"] = "Your post contains inappropriate words. Please remove them.";
+                return RedirectToAction("Create", "Post");
             }
 
             string? postImageUrl = null;
@@ -126,17 +135,42 @@ namespace Rohit_BlogApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddComment(int postId, string content)
+        public IActionResult AddComment(string title, string content)
         {
             var userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
             {
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Auth");
+            }
+
+            // List of abusive words (add more as needed)
+            var bannedWords = new List<string> {
+        "sex", "porn", "chod", "chutiya", "bsdk", "bhosdike", "gandu", "pagal",
+        "lund", "laura", "mc", "bc", "rape", "violence", "kill", "murder",
+        "nude", "abuse", "fuck", "shit", "bitch"
+    };
+
+            // Check for abusive content (case-insensitive)
+            foreach (var word in bannedWords)
+            {
+                if (content.IndexOf(word, StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    TempData["CommentError"] = "Inappropriate language and Abusive words are not allowed.";
+                    return RedirectToAction("Post_Detail", new { title = title });
+                }
+            }
+
+            // Fetch the post by title
+            var post = _context.Posts.FirstOrDefault(p => p.Title == title);
+            if (post == null)
+            {
+                //TempData["ErrorMessage"] = "Post not found.";
+                return RedirectToAction("Index", "Home");
             }
 
             var comment = new Comment
             {
-                PostId = postId,
+                PostId = post.Id,
                 UserId = userId.Value,
                 Content = content,
                 CreatedAt = DateTime.Now
@@ -145,45 +179,27 @@ namespace Rohit_BlogApp.Controllers
             _context.Comments.Add(comment);
             _context.SaveChanges();
 
-            return RedirectToAction("Post_Detail", new { id = postId });
-        }
-
-
-        [HttpPost]
-        public IActionResult Like(int postId)
-        {
-            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));  // Get logged-in user ID
-
-            var existingLike = _context.Likes.FirstOrDefault(l => l.PostId == postId && l.UserId == userId);
-
-            if (existingLike == null)
-            {
-                // Add a new like
-                var newLike = new Like { PostId = postId, UserId = userId };
-                _context.Likes.Add(newLike);
-            }
-            else
-            {
-                // Remove the existing like (unlike)
-                _context.Likes.Remove(existingLike);
-            }
-
-            _context.SaveChanges();
-
-            // Return updated like count
-            var likeCount = _context.Likes.Count(l => l.PostId == postId);
-            return Json(new { likes = likeCount });
+            //TempData["SuccessMessage"] = "Comment added successfully!";
+            return RedirectToAction("Post_Detail", new { title = title });
         }
 
 
 
-        public IActionResult Post_Detail(int id)
+        public IActionResult Post_Detail(string title)
         {
+            if (string.IsNullOrEmpty(title))
+            {
+                return NotFound();
+            }
+
+            // Handle '-' as space
+            //string decodedTitle = title.Replace("-", " ");
+
             var post = _context.Posts
                 .Include(p => p.User)
                 .Include(p => p.Comments)
-                    .ThenInclude(c => c.User)  // Ensure User is loaded with Comments
-                .FirstOrDefault(p => p.Id == id);
+                    .ThenInclude(c => c.User)
+                .FirstOrDefault(p => p.Title == title.Replace("-", " "));
 
             if (post == null)
             {
@@ -192,5 +208,7 @@ namespace Rohit_BlogApp.Controllers
 
             return View(post);
         }
+
+
     }
 }

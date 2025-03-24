@@ -88,6 +88,10 @@ namespace Rohit_BlogApp.Migrations
                     b.Property<int>("PostId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -180,6 +184,12 @@ namespace Rohit_BlogApp.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ProfileUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserBio")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")

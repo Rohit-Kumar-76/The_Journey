@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MpzbLJotb6x7PSlxR31JXsjNX5ibNM92ZEbbisIvurM=",
+  "Hash": "RLdu1eU4+DkCXiMTLCJNRcg4GSz6aN1tzmBGt7POITw=",
   "Source": "Rohit_BlogApp",
   "BasePath": "_content/Rohit_BlogApp",
   "Mode": "Default",
@@ -206,12 +206,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-b9sayid5wm.gz",
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-5oymxqecwq.gz",
       "SourceId": "Rohit_BlogApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Rohit_BlogApp",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=5oymxqecwq}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -220,8 +220,8 @@
       "RelatedAsset": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wf4wcyqcqt",
-      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
+      "Fingerprint": "vocg8nkkx1",
+      "Integrity": "P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\css\\site.css"
@@ -941,12 +941,12 @@
       "OriginalItemSpec": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-xtxxf3hu2r.gz",
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-ho2a60cvfw.gz",
       "SourceId": "Rohit_BlogApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Rohit_BlogApp",
-      "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
+      "RelativePath": "js/site#[.{fingerprint=ho2a60cvfw}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -955,8 +955,8 @@
       "RelatedAsset": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fpxp8wntf7",
-      "Integrity": "465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=",
+      "Fingerprint": "8plkbjmgcm",
+      "Integrity": "JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "5oymxqecwq",
+      "Integrity": "BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1443,6 +1443,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Img/cancel#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8vt9rc5uwg",
+      "Integrity": "dHqRhKgfk5d5/V1O59YTMkXv/21LkJb6xVtTkD4i534=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\cancel.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel1.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Img/cancel1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ahvjtaqmw6",
+      "Integrity": "HuvIFr78A/xBe9bGL4Zqe3M1yrhd/ihTlopum0AKfIM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\cancel1.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\edit.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Img/edit#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8y6oaxlzj1",
+      "Integrity": "MLfGDI3ZnXcWK6gIfAKIqNJhdH08vvQ5ZGHeW4nls80=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\edit.png"
     },
     {
       "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\logo-color.png",
@@ -1487,6 +1550,69 @@
       "OriginalItemSpec": "wwwroot\\Img\\logo-white.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\profile-icon.jpg",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Img/profile-icon#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hdm0wuopo6",
+      "Integrity": "RYnRzKYSS1d4gmNth/5M97qWhOyyqddOnuSWg3B0L0o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\profile-icon.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\Rohit1.jpg",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Img/Rohit1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7pd7i5b3pw",
+      "Integrity": "GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\Rohit1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\upload.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Img/upload#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1zw4d3p3hg",
+      "Integrity": "ExerHL0G0aWltKXcsdoSp1RW2RV6cDe2SM+u+csTHyA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\upload.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js",
       "SourceId": "Rohit_BlogApp",
       "SourceType": "Discovered",
@@ -1501,8 +1627,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "ho2a60cvfw",
+      "Integrity": "742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -2831,6 +2957,48 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\1b9bf3d5-6e80-4101-bb5e-43b00fbb9900.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\382ddf69-4e8b-4dd4-8f7a-736624f36fae.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Uploads/382ddf69-4e8b-4dd4-8f7a-736624f36fae#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8kcvt59u94",
+      "Integrity": "WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\382ddf69-4e8b-4dd4-8f7a-736624f36fae.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\578477fc-6331-49e5-a80d-d7714a17cd4c.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Uploads/578477fc-6331-49e5-a80d-d7714a17cd4c#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dl95opxqih",
+      "Integrity": "0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\578477fc-6331-49e5-a80d-d7714a17cd4c.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\71cbea7a-4011-49d1-a779-1ad3f3688ab0.png",
       "SourceId": "Rohit_BlogApp",
       "SourceType": "Discovered",
@@ -2894,6 +3062,27 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\8b75c30f-2317-4b6d-8c6f-d1819e189a84.png"
     },
     {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\9320807c-4f93-442a-996d-d1783733e791.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Uploads/9320807c-4f93-442a-996d-d1783733e791#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tct1rbfk4r",
+      "Integrity": "3UE5Bmqn7T5oXxLT3OH2x4bA4AiisF22rg3wgjwBrk8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\9320807c-4f93-442a-996d-d1783733e791.png"
+    },
+    {
       "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\d7499939-ef27-4107-86b3-a3cbee05e92c.png",
       "SourceId": "Rohit_BlogApp",
       "SourceType": "Discovered",
@@ -2913,17 +3102,164 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\d7499939-ef27-4107-86b3-a3cbee05e92c.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\e8634e63-fdfd-402b-a871-448ad8f46f69.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "Uploads/e8634e63-fdfd-402b-a871-448ad8f46f69#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4wd76zqujw",
+      "Integrity": "7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\e8634e63-fdfd-402b-a871-448ad8f46f69.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "UserProfileImg/272ed923-ccbb-408d-91f1-20fae77ba9ee#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9ksvgbwent",
+      "Integrity": "p8EFjj2Ook32pqiDhKgqzeyxis350YXKNO2XFM1ExEE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserProfileImg\\272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\38aed100-77fd-4588-a798-da5de539ead8.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "UserProfileImg/38aed100-77fd-4588-a798-da5de539ead8#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8kcvt59u94",
+      "Integrity": "WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserProfileImg\\38aed100-77fd-4588-a798-da5de539ead8.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "UserProfileImg/52cff3ab-adb4-43de-a03d-cfd1d5b1827e#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7pd7i5b3pw",
+      "Integrity": "GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserProfileImg\\52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\59e6312d-726e-47a8-8a2f-c9e023835570.jpg",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "UserProfileImg/59e6312d-726e-47a8-8a2f-c9e023835570#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7pd7i5b3pw",
+      "Integrity": "GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserProfileImg\\59e6312d-726e-47a8-8a2f-c9e023835570.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\86fb87e3-f4e3-4c33-8563-d88b42d7548d.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "UserProfileImg/86fb87e3-f4e3-4c33-8563-d88b42d7548d#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dl95opxqih",
+      "Integrity": "0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserProfileImg\\86fb87e3-f4e3-4c33-8563-d88b42d7548d.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\e9a822e3-4ea5-4751-9b24-439209d01bd1.png",
+      "SourceId": "Rohit_BlogApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\",
+      "BasePath": "_content/Rohit_BlogApp",
+      "RelativePath": "UserProfileImg/e9a822e3-4ea5-4751-9b24-439209d01bd1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4wd76zqujw",
+      "Integrity": "7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserProfileImg\\e9a822e3-4ea5-4751-9b24-439209d01bd1.png"
     }
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-b9sayid5wm.gz",
+      "Route": "css/site.5oymxqecwq.css",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-5oymxqecwq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.005263157895"
         }
       ],
       "ResponseHeaders": [
@@ -2933,15 +3269,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "189"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:36:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2961,13 +3297,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "5oymxqecwq"
         },
         {
           "Name": "label",
@@ -2975,12 +3311,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.5oymxqecwq.css",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2990,7 +3326,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "297"
         },
         {
           "Name": "Content-Type",
@@ -2998,11 +3334,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:36:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3012,7 +3348,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "5oymxqecwq"
         },
         {
           "Name": "label",
@@ -3020,13 +3356,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-b9sayid5wm.gz",
+      "Route": "css/site.5oymxqecwq.css.gz",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-5oymxqecwq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3035,7 +3371,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "189"
         },
         {
           "Name": "Content-Type",
@@ -3043,11 +3379,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:36:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3065,7 +3401,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "5oymxqecwq"
         },
         {
           "Name": "label",
@@ -3073,18 +3409,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-5oymxqecwq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.005263157895"
         }
       ],
       "ResponseHeaders": [
@@ -3094,15 +3430,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "189"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:36:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3122,13 +3458,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ="
         }
       ]
     },
@@ -3143,7 +3479,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "297"
         },
         {
           "Name": "Content-Type",
@@ -3151,11 +3487,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:36:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3165,13 +3501,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-BaJodlJsxmRM2Rgd5gNSK6C9+G6SxFYAhdEu1iv0oMQ="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-b9sayid5wm.gz",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\3pq8z1hp8i-5oymxqecwq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3180,7 +3516,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "189"
         },
         {
           "Name": "Content-Type",
@@ -3188,11 +3524,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:36:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3210,7 +3546,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-P6gMvkMxuzlve/b0mDZKnUtLqTpYxZB+9SB0vc+WK58="
         }
       ]
     },
@@ -3513,6 +3849,252 @@
       ]
     },
     {
+      "Route": "Img/cancel.8vt9rc5uwg.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dHqRhKgfk5d5/V1O59YTMkXv/21LkJb6xVtTkD4i534=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 13:31:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8vt9rc5uwg"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/cancel.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dHqRhKgfk5d5/V1O59YTMkXv/21LkJb6xVtTkD4i534="
+        }
+      ]
+    },
+    {
+      "Route": "Img/cancel.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dHqRhKgfk5d5/V1O59YTMkXv/21LkJb6xVtTkD4i534=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 13:31:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dHqRhKgfk5d5/V1O59YTMkXv/21LkJb6xVtTkD4i534="
+        }
+      ]
+    },
+    {
+      "Route": "Img/cancel1.ahvjtaqmw6.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HuvIFr78A/xBe9bGL4Zqe3M1yrhd/ihTlopum0AKfIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 13:36:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ahvjtaqmw6"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/cancel1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HuvIFr78A/xBe9bGL4Zqe3M1yrhd/ihTlopum0AKfIM="
+        }
+      ]
+    },
+    {
+      "Route": "Img/cancel1.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\cancel1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HuvIFr78A/xBe9bGL4Zqe3M1yrhd/ihTlopum0AKfIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 13:36:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HuvIFr78A/xBe9bGL4Zqe3M1yrhd/ihTlopum0AKfIM="
+        }
+      ]
+    },
+    {
+      "Route": "Img/edit.8y6oaxlzj1.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\edit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MLfGDI3ZnXcWK6gIfAKIqNJhdH08vvQ5ZGHeW4nls80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 11:05:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8y6oaxlzj1"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/edit.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MLfGDI3ZnXcWK6gIfAKIqNJhdH08vvQ5ZGHeW4nls80="
+        }
+      ]
+    },
+    {
+      "Route": "Img/edit.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\edit.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1705"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MLfGDI3ZnXcWK6gIfAKIqNJhdH08vvQ5ZGHeW4nls80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 11:05:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MLfGDI3ZnXcWK6gIfAKIqNJhdH08vvQ5ZGHeW4nls80="
+        }
+      ]
+    },
+    {
       "Route": "Img/logo-color.5lva3ielzo.png",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\logo-color.png",
       "Selectors": [],
@@ -3677,13 +4259,259 @@
       ]
     },
     {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-xtxxf3hu2r.gz",
+      "Route": "Img/profile-icon.hdm0wuopo6.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\profile-icon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RYnRzKYSS1d4gmNth/5M97qWhOyyqddOnuSWg3B0L0o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 10:17:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hdm0wuopo6"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/profile-icon.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RYnRzKYSS1d4gmNth/5M97qWhOyyqddOnuSWg3B0L0o="
+        }
+      ]
+    },
+    {
+      "Route": "Img/profile-icon.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\profile-icon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RYnRzKYSS1d4gmNth/5M97qWhOyyqddOnuSWg3B0L0o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 10:17:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RYnRzKYSS1d4gmNth/5M97qWhOyyqddOnuSWg3B0L0o="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Rohit1.7pd7i5b3pw.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\Rohit1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Sep 2023 13:50:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7pd7i5b3pw"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/Rohit1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk="
+        }
+      ]
+    },
+    {
+      "Route": "Img/Rohit1.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\Rohit1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 Sep 2023 13:50:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk="
+        }
+      ]
+    },
+    {
+      "Route": "Img/upload.1zw4d3p3hg.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\upload.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ExerHL0G0aWltKXcsdoSp1RW2RV6cDe2SM+u+csTHyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 10:28:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1zw4d3p3hg"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/upload.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ExerHL0G0aWltKXcsdoSp1RW2RV6cDe2SM+u+csTHyA="
+        }
+      ]
+    },
+    {
+      "Route": "Img/upload.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Img\\upload.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3209"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ExerHL0G0aWltKXcsdoSp1RW2RV6cDe2SM+u+csTHyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 10:28:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ExerHL0G0aWltKXcsdoSp1RW2RV6cDe2SM+u+csTHyA="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.ho2a60cvfw.js",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-ho2a60cvfw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.005235602094"
+          "Quality": "0.001610305958"
         }
       ],
       "ResponseHeaders": [
@@ -3693,19 +4521,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "190"
+          "Value": "620"
         },
         {
           "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
+          "Value": "\"JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:38:26 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3721,18 +4549,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "W/\"742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "ho2a60cvfw"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o="
         }
       ]
     },
     {
-      "Route": "js/site.js",
+      "Route": "js/site.ho2a60cvfw.js",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3742,7 +4578,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "1442"
         },
         {
           "Name": "Content-Type",
@@ -3750,121 +4586,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-xtxxf3hu2r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "190"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-xtxxf3hu2r.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.005235602094"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "190"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:38:26 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "ho2a60cvfw"
         },
         {
           "Name": "label",
@@ -3872,13 +4608,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js",
+      "Route": "js/site.ho2a60cvfw.js.gz",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-ho2a60cvfw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3887,7 +4623,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "620"
         },
         {
           "Name": "Content-Type",
@@ -3895,56 +4631,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js.gz",
-      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-xtxxf3hu2r.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "190"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 05:57:05 GMT"
+          "Value": "Sat, 22 Mar 2025 09:38:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3962,7 +4653,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "ho2a60cvfw"
         },
         {
           "Name": "label",
@@ -3970,7 +4661,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-465WqepNnI4ENLgQJFXrL2gtI20GCfeLK3JAtugOzpA="
+          "Value": "sha256-JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-ho2a60cvfw.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001610305958"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "620"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 09:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1442"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 09:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-742B70Krs3TSZPzNEFH/vnnlyJd1DeEUCgP6S25WF8o="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.js.gz",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\obj\\Debug\\net9.0\\compressed\\o25weh8hor-ho2a60cvfw.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 09:38:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JN6JAR/SgxfzPxU57kYQURfGGJBZuWQn324gUgiqgBg="
         }
       ]
     },
@@ -22481,6 +23309,170 @@
       ]
     },
     {
+      "Route": "Uploads/382ddf69-4e8b-4dd4-8f7a-736624f36fae.8kcvt59u94.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\382ddf69-4e8b-4dd4-8f7a-736624f36fae.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 06:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8kcvt59u94"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/382ddf69-4e8b-4dd4-8f7a-736624f36fae.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/382ddf69-4e8b-4dd4-8f7a-736624f36fae.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\382ddf69-4e8b-4dd4-8f7a-736624f36fae.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 06:03:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/578477fc-6331-49e5-a80d-d7714a17cd4c.dl95opxqih.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\578477fc-6331-49e5-a80d-d7714a17cd4c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 06:26:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dl95opxqih"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/578477fc-6331-49e5-a80d-d7714a17cd4c.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/578477fc-6331-49e5-a80d-d7714a17cd4c.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\578477fc-6331-49e5-a80d-d7714a17cd4c.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 06:26:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q="
+        }
+      ]
+    },
+    {
       "Route": "Uploads/71cbea7a-4011-49d1-a779-1ad3f3688ab0.ktxz5fbs8p.png",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\71cbea7a-4011-49d1-a779-1ad3f3688ab0.png",
       "Selectors": [],
@@ -22727,6 +23719,88 @@
       ]
     },
     {
+      "Route": "Uploads/9320807c-4f93-442a-996d-d1783733e791.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\9320807c-4f93-442a-996d-d1783733e791.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3UE5Bmqn7T5oXxLT3OH2x4bA4AiisF22rg3wgjwBrk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 11:29:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3UE5Bmqn7T5oXxLT3OH2x4bA4AiisF22rg3wgjwBrk8="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/9320807c-4f93-442a-996d-d1783733e791.tct1rbfk4r.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\9320807c-4f93-442a-996d-d1783733e791.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "96936"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3UE5Bmqn7T5oXxLT3OH2x4bA4AiisF22rg3wgjwBrk8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 11:29:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tct1rbfk4r"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/9320807c-4f93-442a-996d-d1783733e791.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3UE5Bmqn7T5oXxLT3OH2x4bA4AiisF22rg3wgjwBrk8="
+        }
+      ]
+    },
+    {
       "Route": "Uploads/d7499939-ef27-4107-86b3-a3cbee05e92c.ktxz5fbs8p.png",
       "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\d7499939-ef27-4107-86b3-a3cbee05e92c.png",
       "Selectors": [],
@@ -22805,6 +23879,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-CPkFgIyy4TWikMTQKW8JKM4ttadWGzBEaj0CS8ZC2FE="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/e8634e63-fdfd-402b-a871-448ad8f46f69.4wd76zqujw.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\e8634e63-fdfd-402b-a871-448ad8f46f69.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:20:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4wd76zqujw"
+        },
+        {
+          "Name": "label",
+          "Value": "Uploads/e8634e63-fdfd-402b-a871-448ad8f46f69.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM="
+        }
+      ]
+    },
+    {
+      "Route": "Uploads/e8634e63-fdfd-402b-a871-448ad8f46f69.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\Uploads\\e8634e63-fdfd-402b-a871-448ad8f46f69.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 06:20:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/272ed923-ccbb-408d-91f1-20fae77ba9ee.9ksvgbwent.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p8EFjj2Ook32pqiDhKgqzeyxis350YXKNO2XFM1ExEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 15:05:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ksvgbwent"
+        },
+        {
+          "Name": "label",
+          "Value": "UserProfileImg/272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p8EFjj2Ook32pqiDhKgqzeyxis350YXKNO2XFM1ExEE="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\272ed923-ccbb-408d-91f1-20fae77ba9ee.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60517"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p8EFjj2Ook32pqiDhKgqzeyxis350YXKNO2XFM1ExEE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 15:05:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p8EFjj2Ook32pqiDhKgqzeyxis350YXKNO2XFM1ExEE="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/38aed100-77fd-4588-a798-da5de539ead8.8kcvt59u94.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\38aed100-77fd-4588-a798-da5de539ead8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 06:00:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8kcvt59u94"
+        },
+        {
+          "Name": "label",
+          "Value": "UserProfileImg/38aed100-77fd-4588-a798-da5de539ead8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/38aed100-77fd-4588-a798-da5de539ead8.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\38aed100-77fd-4588-a798-da5de539ead8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "129640"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 06:00:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WNJ+roLLvwFwEkavBbe0I5KGxPKwP8sg5yKZH4OENY0="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/52cff3ab-adb4-43de-a03d-cfd1d5b1827e.7pd7i5b3pw.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 14:00:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7pd7i5b3pw"
+        },
+        {
+          "Name": "label",
+          "Value": "UserProfileImg/52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\52cff3ab-adb4-43de-a03d-cfd1d5b1827e.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 14:00:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/59e6312d-726e-47a8-8a2f-c9e023835570.7pd7i5b3pw.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\59e6312d-726e-47a8-8a2f-c9e023835570.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 14:06:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7pd7i5b3pw"
+        },
+        {
+          "Name": "label",
+          "Value": "UserProfileImg/59e6312d-726e-47a8-8a2f-c9e023835570.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/59e6312d-726e-47a8-8a2f-c9e023835570.jpg",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\59e6312d-726e-47a8-8a2f-c9e023835570.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20134"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 14:06:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GzeB8i8+1n0PNgUohQo5j++Q2ewkYtmz8j+2rpkOWyk="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/86fb87e3-f4e3-4c33-8563-d88b42d7548d.dl95opxqih.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\86fb87e3-f4e3-4c33-8563-d88b42d7548d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 15:24:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dl95opxqih"
+        },
+        {
+          "Name": "label",
+          "Value": "UserProfileImg/86fb87e3-f4e3-4c33-8563-d88b42d7548d.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/86fb87e3-f4e3-4c33-8563-d88b42d7548d.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\86fb87e3-f4e3-4c33-8563-d88b42d7548d.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178623"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 15:24:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0WsOpseRUiFm+WZmSz97QNXzmMsJH0RBQfUUWtV1L0Q="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/e9a822e3-4ea5-4751-9b24-439209d01bd1.4wd76zqujw.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\e9a822e3-4ea5-4751-9b24-439209d01bd1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 15:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4wd76zqujw"
+        },
+        {
+          "Name": "label",
+          "Value": "UserProfileImg/e9a822e3-4ea5-4751-9b24-439209d01bd1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM="
+        }
+      ]
+    },
+    {
+      "Route": "UserProfileImg/e9a822e3-4ea5-4751-9b24-439209d01bd1.png",
+      "AssetFile": "C:\\Users\\HP\\source\\repos\\Rohit_BlogApp\\Rohit_BlogApp\\wwwroot\\UserProfileImg\\e9a822e3-4ea5-4751-9b24-439209d01bd1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 15:08:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7Gu2qVyuUoX3ysW7BgH1wHzRrAbBYoKlwCPrkwZ5YNM="
         }
       ]
     }

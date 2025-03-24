@@ -153,8 +153,6 @@ C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\Rohit_Blog
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\scopedcss\bundle\Rohit_BlogApp.styles.css
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\scopedcss\projectbundle\Rohit_BlogApp.bundle.scp.css
-C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\3pq8z1hp8i-b9sayid5wm.gz
-C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\o25weh8hor-xtxxf3hu2r.gz
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\1diex0c87m-bqjiyaj88i.gz
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\dpvlv4yieu-c2jlpeoesf.gz
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\j9t14e1lsr-erw9l3u2r3.gz
@@ -233,3 +231,5 @@ C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\Rohit_Blog
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\Rohit_BlogApp.genruntimeconfig.cache
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\ref\Rohit_BlogApp.dll
 C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\35tiewhgkh-p9dvxgsn4e.gz
+C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\3pq8z1hp8i-5oymxqecwq.gz
+C:\Users\HP\source\repos\Rohit_BlogApp\Rohit_BlogApp\obj\Debug\net9.0\compressed\o25weh8hor-ho2a60cvfw.gz

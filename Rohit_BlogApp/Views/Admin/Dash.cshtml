@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Users Section -->
+    <div class="bg-white shadow-lg rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Users</h2>
+        <div class="overflow-y-auto max-h-[500px]">
+            @foreach (var user in Model.Users)
+            {
+                <div class="border-b py-2 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-lg font-medium">@user.Username</h3>
+                        <p class="text-sm text-gray-500">@user.Email</p>
+                    </div>
+                    <div>
+                        <a href="/Admin/User_Details/@user.Id" class="text-blue-500 hover:underline mr-2">View Posts</a>
+                        <a href="/Admin/DeleteUser/@user.Id" class="text-red-500 hover:underline">Delete</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <!-- Posts Section -->
+    <div class="bg-white shadow-lg rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Posts</h2>
+        <div class="overflow-y-auto max-h-[500px]">
+            @if (Model.Posts.Count == 0)
+            {
+                <p class="text-gray-500 text-center">Select a user to view posts.</p>
+            }
+            else
+            {
+                @foreach (var post in Model.Posts)
+                {
+                    <div class="border-b py-2">
+                        <h3 class="text-lg font-medium">@post.Title</h3>
+                        <p class="text-sm text-gray-500">@post.CreatedAt.ToString("yyyy-MM-dd")</p>
+                        <div class="mt-2">
+                            <a href="/Admin/Post_Details/@post.Id" class="text-blue-500 hover:underline mr-2">View More</a>
+                            <a href="/Admin/DeletePost/@post.Id" class="text-red-500 hover:underline">Delete</a>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

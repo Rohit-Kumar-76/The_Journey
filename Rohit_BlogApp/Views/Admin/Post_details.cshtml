@@ -1,0 +1,35 @@
+﻿@model Rohit_BlogApp.Models.Post
+
+@{
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+
+<h2 class="text-3xl font-semibold mb-4">@Model.Title</h2>
+
+<div class="bg-white rounded-lg shadow-md p-4 mb-6">
+    <img src="@Model.PostUrl" alt="Post Image" class="w-full max-h-96 object-cover rounded-lg mb-4">
+    <p class="text-gray-700">@Model.Content</p>
+    <p class="text-sm text-gray-500 mt-2">Posted by: @Model.User.Username</p>
+</div>
+
+<h3 class="text-xl font-medium mb-4">Comments</h3>
+<div class="bg-white rounded-lg shadow-md p-4">
+    @if (Model.Comments.Any())
+    {
+        <ul>
+            @foreach (var comment in Model.Comments)
+            {
+                <li class="border-b p-2">
+                    <p class="text-gray-700">
+                        <strong>@(comment.User != null ? comment.User.Username : "Unknown User"):</strong> @comment.Content
+                    </p>
+                </li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>No comments yet.</p>
+    }
+</div>
+

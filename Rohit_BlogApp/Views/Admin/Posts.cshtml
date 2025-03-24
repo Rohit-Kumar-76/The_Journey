@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "All Posts";
+    Layout = "~/Views/Shared/_Admin_Layout.cshtml";
+}
+
+<h2 class="text-2xl font-bold mb-6">All Posts</h2>
+
+<!-- Search Bar -->
+<form method="get" asp-controller="Admin" asp-action="Posts" class="mb-6">
+    <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden w-1/2">
+        <input type="text" name="search" value="@Context.Request.Query["search"]" placeholder="Search posts..." class="flex-grow p-2 outline-none">
+        <button type="submit" class="bg-blue-500 text-white px-4 p-2 rounded ">Search</button>
+    </div>
+</form>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    @foreach (var post in Model)
+    {
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden border">
+            <div class="p-4">
+                <h3 class="text-xl font-semibold mb-2">@post.Title</h3>
+                <p class="text-gray-600 mb-4">@post.Content.Substring(0, Math.Min(post.Content.Length, 100))...</p>
+                <div class="text-sm text-gray-500 mb-2">By: <span class="font-medium">@post.User.Username</span></div>
+                <div class="flex justify-between items-center">
+                    <a asp-controller="Admin" asp-action="Post_Details" asp-route-id="@post.Id" class="text-blue-500 hover:underline">Read More</a>
+                    <form asp-controller="Admin" asp-action="DeletePost" asp-route-id="@post.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this post?');">
+                        <button type="submit" class="text-red-500 hover:underline ml-4">Delete</button>
+                    </form>
+                    <span class="text-sm text-gray-500">@post.CreatedAt.ToString("MMM dd, yyyy")</span>
+                </div>
+            </div>
+        </div>
+    }
+</div>

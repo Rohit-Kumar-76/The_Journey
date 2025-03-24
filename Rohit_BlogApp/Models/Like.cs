@@ -10,6 +10,7 @@
 
         // Foreign Key for Post
         public int PostId { get; set; }
+        public string Title { get; set; }
         public Post Post { get; set; }
     }
 }

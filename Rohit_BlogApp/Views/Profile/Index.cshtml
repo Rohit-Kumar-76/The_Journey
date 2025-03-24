@@ -3,40 +3,107 @@
 @{
     ViewData["Title"] = "User Profile";
     var currentUserId = Context.Session.GetInt32("UserId");
-}
 
-<div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
-    <!-- User Info -->
-    <div class="text-center mb-6 sticky top-2 bg-gray-200 p-4 shadow">
-        <h1 class="text-3xl font-bold">@Model.Username</h1>
-        <p class="text-gray-600">Email: @Model.Email</p>
-        <p class="text-gray-600">Total Posts: @Model.Posts.Count()</p>
+
+}
+<div id="editprofileForm" class="z-30 absolute w-full h-full bg-gray-700 flex justify-center items-center " style="display:none;">  
+    <div  class="w-1/2 mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6 border-2 border-black">
+        <p class="bg-red-500 p-2 rounded w-20 text-center font-bold cursor-pointer text-white" onclick="cancelForm()">X</p>
+        <h2 class="text-2xl font-bold text-center text-gray-800">Edit Profile</h2>
+
+        <form action="/Profile/UpdateProfile" method="post" class="space-y-1" enctype="multipart/form-data">
+            <!-- Profile Image Upload -->
+            <div class="flex flex-col items-center space-y-2 relative">
+                <label class="text-lg font-medium text-gray-700">Profile Image</label>
+                <div class="relative w-32 h-32 rounded-full overflow-hidden ">
+                    <img id="profileImage" src="/Img/upload.png" alt="Profile Image" name="ProfileUrl" class="w-full h-full object-cover">
+                    <input type="file" id="imageUpload" name="profileImage" class="absolute inset-0 opacity-0 cursor-pointer" onchange="previewImage()" />
+                   
+                </div>
+                <img src="/Img/cancel1.png" alt="Alternate Text" class="w-8 absolute bottom-1 right-20 cursor-pointer " onclick="cancelImage()" />
+            </div>
+
+            <!-- Username Input -->
+            <div>
+                <label class="block text-lg font-medium text-gray-700">Username</label>
+                <input type="text" name="Username" value="@Model.Username" class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none" />
+            </div>
+
+            <!-- Bio Input -->
+            <div>
+                <label class="block text-lg font-medium text-gray-700">Bio</label>
+                <textarea rows="4" cols="10" name="UserBio" placeholder="Write something..." class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">@Model.UserBio</textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="w-full bg-blue-500 text-white text-lg font-semibold py-2 rounded-lg hover:bg-blue-600 transition">Save Changes</button>
+            </div>
+        </form>
     </div>
+</div>
+
+
+<div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg my-3 ">
+    <!-- User Info -->
+
+    <div class="flex flex-col xl:flex-row gap-5 text-center mb-6  xl:top-2 bg-gray-200 p-4 shadow relative">
+        <div >
+            <div class="w-full  h-[190px] p-2 bg-gray-300 overflow-hidden">
+                @if(!string.IsNullOrEmpty(Model.ProfileUrl))
+                {
+                <img src="@Model.ProfileUrl" class="block mx-auto h-full rounded-md  w-full p-1  " alt="profile" />
+                }
+                else{
+                    <img src="/Img/profile-icon.jpg" class="block mx-auto h-full rounded-md  w-full p-1  " alt="profile" />
+                }
+            </div>
+           
+        </div>
+        <div class="text-center mx-auto">
+            <h1 class="text-3xl font-bold">@Model.Username</h1>
+            <p class="text-gray-600"> @Model.Email</p>
+            <p class="text-gray-600">Total Posts: @Model.Posts.Count()</p>
+
+            <hr />
+            <h2 class="font-bold">Bio </h2>
+            <p class="text-gray-600 px-5">
+                @Model.UserBio
+            </p>
+        </div>
+        <img id="editprofile" onclick="EditForm()" src="/Img/edit.png" class="w-14 rounded-full absolute right-0 bottom-0 w-12 h-12 bg-white p-2 shadow rounded-lg m-1 cursor-pointer" alt="Alternate Text" />
+    </div>
+
+
 
     <hr class="my-6">
 
     <!-- User Posts -->
-    <h2 class="text-2xl font-bold mb-4">Posts by @Model.Username</h2>
-    <div class="grid grid-cols-2 gap-2">
+    <h2 class="text-2xl font-bold mb-4"> @Model.Username Posts</h2>
+    <div class="grid grid-rows-1  gap-2">
         @foreach (var post in Model.Posts)
         {
             <div class="bg-gray-100 p-4 rounded-lg shadow-md">
-                <h3 class="text-xl font-semibold">@post.Title</h3>
+                @* <h3 class="text-xl font-semibold">@post.Title</h3> *@
 
-                <!-- Limited Content -->
-                <p class="text-gray-700 overflow-hidden max-h-20 line-clamp-3" id="post-content-@post.Id">
-                    @post.Content
-                </p>
+               
 
-                <button onclick="toggleContent('@post.Id')" class="text-blue-500 hover:underline mt-2">View More</button>
+              
 
                 @if (!string.IsNullOrEmpty(post.PostUrl))
                 {
                     <img class="w-full mt-2 rounded" src="@post.PostUrl" alt="Post Image" />
+                }else{
+                    <!-- Limited Content -->
+                    <p class="text-gray-700 overflow-hidden max-h-20 line-clamp-3" id="post-content-@post.Id">
+                        @post.Content
+                    </p>
                 }
 
                 <p class="text-sm text-gray-500 mt-2">Posted on: @post.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
-                <a href="/Post/Post_Detail/@post.Id" class="text-blue-500 hover:underline">Read More</a>
+                <a href="@Url.Action("Post_Detail", "Post", new { title = post.Title.Replace(" ", "-") })" class="text-blue-500 hover:underline text-right">
+                    View
+                </a>
 
                 <!-- Edit & Delete Buttons - Show only if current user is the post owner -->
                 @if (currentUserId == post.UserId)
@@ -54,22 +121,35 @@
 </div>
 
 <script>
-    function toggleContent(postId) {
-        const content = document.getElementById('post-content-' + postId);
-        if (content.classList.contains('line-clamp-3')) {
-            content.classList.remove('line-clamp-3', 'max-h-20', 'overflow-hidden');
-        } else {
-            content.classList.add('line-clamp-3', 'max-h-20', 'overflow-hidden');
+  
+    const editform = document.getElementById("editprofileForm");
+    function EditForm()
+    {
+        editform.style.display='flex';
+    }
+    function cancelForm()
+    {
+        editform.style.display='none';
+    }
+
+</script>
+<script>
+    function previewImage() {
+        const input = document.getElementById('imageUpload');
+        const profileImage = document.getElementById('profileImage');
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                profileImage.src = e.target.result;
+            };
+            reader.readAsDataURL(input.files[0]);
         }
     }
-</script>
 
-<style>
-    /* Tailwind doesn’t have line-clamp out of the box, so adding it here */
-    .line-clamp-3 {
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+    function cancelImage() {
+        const profileImage = document.getElementById('profileImage');
+        const input = document.getElementById('imageUpload');
+        profileImage.src = '/Img/upload.png';
+        input.value = "";
     }
-</style>
+</script>

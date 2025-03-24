@@ -12,9 +12,16 @@ namespace Rohit_BlogApp.Data
         public DbSet<Post> Posts { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Like> Likes { get; set; }
+       
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+
+
+          
+
             // 📝 Notification Relationships (No Cascade - User Controls Deletion)
             modelBuilder.Entity<Notification>()
                 .HasOne(n => n.User)

@@ -15,12 +15,7 @@
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <img src="/Img/logo-color.png" class="text-2xl font-bold text-center mb-6" />
         <h1 class="text-2xl font-bold text-center mb-6">Welcome to The Journey</h1>
-        @if (TempData["SuccessMessage"] != null)
-        {
-            <div class="bg-green-100 text-green-700 p-2 mb-4 rounded-md">
-                @TempData["SuccessMessage"]
-            </div>
-        }
+       
         @if (TempData["ErrorMessage"] != null)
         {
             <div class="bg-red-100 text-red-700 p-2 mb-4 rounded-md">
@@ -43,6 +38,11 @@
         <p class="text-center text-sm text-gray-600 mt-4">
             Don't have an account?
             <a href="/Auth/Register" class="text-blue-500 hover:underline">Register here</a>
+        </p>
+        <hr class="mt-2" />
+        <p class="text-center text-sm text-gray-600 mt-4">
+            If You Are Admin
+            <a href="/Admin/Login" class="text-blue-500 hover:underline">Login here</a>
         </p>
     </div>
 </body>
