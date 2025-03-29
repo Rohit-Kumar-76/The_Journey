@@ -1,8 +1,10 @@
 ﻿@{
     var username = Context.Session.GetString("Username") ?? "Guest";
     var email = Context.Session.GetString("Email") ?? "guest@example.com";
-    var profileUrl = Context.Session.GetString("ProfileUrl");
+    // var profileUrl = Context.Session.GetString("ProfileUrl");
 }
+
+
 
 
 <!DOCTYPE html>
@@ -62,14 +64,14 @@
 
             <!-- Navigation Links -->
             <ul class="space-y-4 flex-grow">
-                <li><a href="/Home/Index" class="block text-lg text-gray-700 hover:text-blue-500">Posts</a></li>
-                <hr />
-                <li><a href="/Profile/Index/" class="block text-lg text-gray-700 hover:text-blue-500">Profile</a></li>
-                <hr />
-                <li><a asp-controller="Post" asp-action="Create" class="block text-lg text-gray-700 hover:text-blue-500">Create Post</a></li>
-                <hr />
+                <li><a href="/Home/Index" class="block text-lg text-gray-700 hover:text-blue-500">Posts <hr class="mt-1" /></a></li>
+                
+                <li><a href="/Profile/Index/" class="block text-lg text-gray-700 hover:text-blue-500">Profile <hr class="mt-1" /></a></li>
+                
+                <li><a asp-controller="Post" asp-action="Create" class="block text-lg text-gray-700 hover:text-blue-500">Create Post <hr class="mt-1" /></a></li>
+               
             </ul>
-
+            @* <hr class="mt-1" /> *@
             <!-- Logout Button -->
             <div class="flex-end item-end">
                 <form asp-controller="Home" asp-action="Logout">
@@ -78,7 +80,7 @@
                     </button>
                 </form>
             </div>
-
+            <hr  class="mt-1"/>
         </aside>
 
 
@@ -86,17 +88,16 @@
         <main role="main" class="pb-3 mx-auto w-full xl:w-[60%] px-4 mt-16 md:mt-0 relative h-auto">
             @RenderBody()
         </main>
+        <div id="notificationContainer"></div>
 
-        <!-- Notifications -->
-        <aside id="notifications" class="w-1/2 xl:w-[20%] bg-white border-l mt-[70px] lg:mt-0 shadow-md p-4 fixed h-full right-0 flex-col transform translate-x-full transition-transform duration-300 ease-in-out xl:translate-x-0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#notificationContainer").load("/Post/GetNotifications");
+            });
+        </script>
 
-            <h2 class="text-xl font-bold mb-4">Notifications</h2>
-            <div id="notificationList" class="space-y-2 flex-grow overflow-y-auto">
-                <p class="text-sm text-gray-700">You liked "Tailwind CSS Tips"</p>
-                <p class="text-sm text-gray-700">Commented on "Learning Tailwind"</p>
-                <p class="text-sm text-gray-700">New post: "My Tailwind Journey"</p>
-            </div>
-        </aside>
+
     </div>
 
 	<script src="~/js/site.js"></script>

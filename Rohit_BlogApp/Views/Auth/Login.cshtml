@@ -13,7 +13,9 @@
 </head>
 <body class="bg-gray-100 h-screen flex items-center justify-center">
     <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-        <img src="/Img/logo-color.png" class="text-2xl font-bold text-center mb-6" />
+        <a href="/Admin/Login" class="text-blue-500 hover:underline">
+            <img src="/Img/logo-color.png" class="text-2xl font-bold text-center mb-6" />
+        </a>
         <h1 class="text-2xl font-bold text-center mb-6">Welcome to The Journey</h1>
        
         @if (TempData["ErrorMessage"] != null)
@@ -30,20 +32,40 @@
             </div>
             <div>
                 <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                <input type="password" id="password" name="Password" required
-                       class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <div class="relative">
+                    <input type="password" id="password" name="Password" required
+                           class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 pr-10">
+                    <!-- 🙉 Toggle Icon Button -->
+                    <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                        <span id="eyeIcon">🙈</span>
+                    </button>
+                </div>
             </div>
             <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Login</button>
         </form>
+        <hr class="my-3" />
         <p class="text-center text-sm text-gray-600 mt-4">
             Don't have an account?
             <a href="/Auth/Register" class="text-blue-500 hover:underline">Register here</a>
         </p>
-        <hr class="mt-2" />
-        <p class="text-center text-sm text-gray-600 mt-4">
-            If You Are Admin
-            <a href="/Admin/Login" class="text-blue-500 hover:underline">Login here</a>
-        </p>
+       
+    
     </div>
+
+    <script>
+        document.getElementById("togglePassword").addEventListener("click", function () {
+            var passwordField = document.getElementById("password");
+            var eyeIcon = document.getElementById("eyeIcon");
+
+            // Toggle password field type
+            if (passwordField.type === "password") {
+                passwordField.type = "text";  // Show password
+                eyeIcon.innerHTML = "🙉";  
+            } else {
+                passwordField.type = "password";  // Hide password
+                eyeIcon.innerHTML = "🙈";  
+            }
+        });
+    </script>
 </body>
 </html>

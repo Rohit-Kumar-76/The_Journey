@@ -29,7 +29,7 @@ namespace Rohit_BlogApp.Controllers
                 // Store User ID as Integer in Session
                 HttpContext.Session.SetInt32("UserId", user.Id);
 
-                HttpContext.Session.SetString("ProfileUrl", user?.ProfileUrl ?? "/Img/profile-icon.jpg");
+                //HttpContext.Session.SetString("ProfileUrl", user?.ProfileUrl ?? "/Img/profile-icon.jpg");
 
 
                 return RedirectToAction("Index", "Home");  // Fix Redirect
@@ -52,18 +52,31 @@ namespace Rohit_BlogApp.Controllers
             try
             {
                 // 🚦 Username Validation: No spaces, no capitals, cannot start with numbers or special characters (except underscore)
-                var usernamePattern = @"^[a-z_][a-z0-9_]*$";
+                var usernamePattern = @"^[a-z_](?:[a-z0-9_]|(?<!\.)\.)*$";
+
                 if (!Regex.IsMatch(username, usernamePattern))
                 {
                     TempData["ErrorMessage"] = "Invalid username. Use only lowercase letters, numbers, and underscores. Must start with a letter or underscore.";
                     return View();
                 }
+                else
+                {
+                    TempData["ErrorMessage"] = "";
+                    return View();
+                }
 
-                // Check if user already exists
-                var existingUser = _context.Users.FirstOrDefault(u => u.Email == email);
+                    // Check if user already exists
+                    var existingUser = _context.Users.FirstOrDefault(u => u.Email == email);
                 if (existingUser != null)
                 {
-                    TempData["ErrorMessage"] = "Email already registered. Please use another email.";
+                    TempData["ErrorMessage"] = "Email already registered. ";
+                    return View();
+                }
+                //Checking for Username
+                var existingUsername = _context.Users.FirstOrDefault(u => u.Username == username);
+                if (existingUsername != null)
+                {
+                    TempData["ErrorMessage"] = "Username is already registered.";
                     return View();
                 }
 

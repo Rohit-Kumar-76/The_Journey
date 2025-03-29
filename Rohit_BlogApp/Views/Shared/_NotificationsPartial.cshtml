@@ -1,0 +1,28 @@
+﻿@model List<Rohit_BlogApp.Models.Notification>
+
+<aside id="notifications" class="w-1/2 xl:w-[20%] overflow-y-auto bg-white border-l mt-[70px] lg:mt-0 shadow-md p-4 fixed h-full right-0 flex-col transform translate-x-full transition-transform duration-300 ease-in-out xl:translate-x-0">
+    <h2 class="text-xl font-bold mb-4">Notifications</h2>
+    <div id="notificationList" class="space-y-2 flex-grow overflow-y-auto">
+        @if (Model.Any())
+        {
+            foreach (var notification in Model)
+            {
+                var commenter = notification.Post.Comments.OrderByDescending(c => c.CreatedAt).FirstOrDefault()?.User;
+
+                <a href="@Url.Action("Post_Detail", "Post", new { title = notification.Post.Title.Replace(" ", "-") })" class="block text-sm text-gray-700 hover:bg-gray-100 p-2 rounded transition">
+                    <p>
+                        <span class="font-semibold">@commenter?.Username</span>
+                        @(notification.Type == "Reply" ? "replied" : "commented") on your post
+                        <span class="font-bold">"@notification.Post.Title"</span> at @notification.CreatedAt.ToString("f")
+                    </p>
+
+                </a>
+                <hr class="my-1" />
+            }
+        }
+        else
+        {
+            <p class="text-sm text-gray-500">No notifications yet.</p>
+        }
+    </div>
+</aside>

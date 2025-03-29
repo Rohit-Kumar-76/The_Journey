@@ -48,11 +48,11 @@
     <!-- User Info -->
 
     <div class="flex flex-col xl:flex-row gap-5 text-center mb-6  xl:top-2 bg-gray-200 p-4 shadow relative">
-        <div >
-            <div class="w-full  h-[190px] p-2 bg-gray-300 overflow-hidden">
+        <div class="w-full h-[200px] overflow-hidden xl:w-1/2 mx-auto">
+            <div class="w-full   rounded-xl p-2  ">
                 @if(!string.IsNullOrEmpty(Model.ProfileUrl))
                 {
-                <img src="@Model.ProfileUrl" class="block mx-auto h-full rounded-md  w-full p-1  " alt="profile" />
+                <img src="@Model.ProfileUrl" class="block mx-auto h-full rounded-2xl  w-full p-1  " alt="profile" />
                 }
                 else{
                     <img src="/Img/profile-icon.jpg" class="block mx-auto h-full rounded-md  w-full p-1  " alt="profile" />
@@ -79,7 +79,7 @@
     <hr class="my-6">
 
     <!-- User Posts -->
-    <h2 class="text-2xl font-bold mb-4"> @Model.Username Posts</h2>
+    <h2 class="text-2xl font-bold mb-4"> Your Posts</h2>
     <div class="grid grid-rows-1  gap-2">
         @foreach (var post in Model.Posts)
         {

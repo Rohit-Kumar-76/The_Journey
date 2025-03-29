@@ -1,6 +1,5 @@
 ﻿@model Rohit_BlogApp.Models.Post
 
-
 @{
     ViewData["Title"] = "Post Details";
     var currentUserId = Context.Session.GetInt32("UserId");
@@ -8,26 +7,23 @@
 
 <div class="max-w-4xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
     <!-- Post Details -->
-      <div class="flex space-x-3">
+    <div class="flex space-x-3">
         @if (!string.IsNullOrEmpty(Model.User.ProfileUrl))
         {
             <a href="/Profile/UserProfile/@Model.User.Username">
-                <div class="w-14 h-14 rounded-full" style="background: url('@Model.User.ProfileUrl') center center / cover no-repeat;"> </div>
+                <div class="w-14 h-14 rounded-full" style="background: url('@Model.User.ProfileUrl') center center / cover no-repeat;"></div>
             </a>
-
-
-           
         }
         else
         {
-            <div class="w-14 h-14 rounded-full" style="background: url('/Img//profile-icon.jpg') center center / cover no-repeat; border:2px solid black"></div>
+            <div class="w-14 h-14 rounded-full" style="background: url('/Img/profile-icon.jpg') center center / cover no-repeat; border:2px solid black"></div>
         }
-            <div>
+        <div>
             <h1 class="text-3xl font-bold">@Model.Title</h1>
             <p class="text-gray-600 mb-4">Posted by: <span class="font-semibold">@Model.User.Username</span> on @Model.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+        </div>
+    </div>
 
-            </div>
-      </div>
     @if (!string.IsNullOrEmpty(Model.PostUrl))
     {
         <img class="w-full mb-4 rounded" src="@Model.PostUrl" alt="Post Image" />
@@ -40,12 +36,9 @@
     <!-- Like & Comment Section -->
     <div class="mt-4 flex items-center justify-between">
         <div class="flex space-x-4">
-            <button onclick="likePost('@Model.Id')" class="text-gray-500 hover:text-red-500">
-                ❤️ <span id="like-count-@Model.Id">@Model.Likes?.Count()</span>
-            </button>
-            <a href="#comments-section" class="text-gray-500 hover:text-blue-500">
+            <p class="text-gray-500 hover:text-blue-500">
                 💬 Comments (<span>@Model.Comments?.Count()</span>)
-            </a>
+            </p>
         </div>
     </div>
 
@@ -64,6 +57,62 @@
                     </p>
                     <p class="text-gray-800">@comment.Content</p>
                     <p class="text-xs text-gray-500">@comment.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+
+                    <!-- Comment Actions (Reply & Delete) -->
+                    <div class="mt-2 flex space-x-2">
+                        @if (currentUserId != null)
+                        {
+                            <!-- Reply Button -->
+                            <button onclick="toggleReplyBox(@comment.Id)" class="text-blue-500 text-sm">Reply</button>
+                        }
+
+                        @if (currentUserId == comment.UserId || currentUserId == Model.User.Id)
+                        {
+                            <!-- Delete Button -->
+                            <form method="post" action="DeleteComment" class="inline" onsubmit="return confirm('Are you sure you want to delete this comment?');">
+                                <input type="hidden" name="commentId" value="@comment.Id" />
+                                <button type="submit" class="text-red-500 text-sm ml-2">Delete</button>
+                            </form>
+
+                        }
+                    </div>
+
+                    <!-- Reply Box -->
+                    <div id="reply-box-@comment.Id" class="hidden mt-3">
+                        <form method="post" action="/Post/AddReply">
+                            <input type="hidden" name="title" value="@Model.Title" />
+                            <input type="hidden" name="parentCommentId" value="@comment.Id" />
+                            <textarea name="content" rows="2" class="w-full p-2 border rounded-lg" placeholder="Write a reply..." required></textarea>
+                            <button type="submit" class="mt-2 bg-green-500 text-white px-4 py-1 rounded hover:bg-green-600">Reply</button>
+                        </form>
+                    </div>
+
+                    <!-- Display Replies -->
+                    @if (comment.Replies != null && comment.Replies.Any())
+                    {
+                        <div class="ml-6 mt-3 space-y-2">
+                            @foreach (var reply in comment.Replies)
+                            {
+                                <div class="bg-gray-200 p-2 rounded-lg shadow">
+                                    <p class="text-sm text-gray-600 mb-1">
+                                        <span class="font-bold">@(reply.User != null ? reply.User.Username : "Unknown")</span> replied:
+                                    </p>
+                                    <p class="text-gray-800">@reply.Content</p>
+                                    <p class="text-xs text-gray-500">@reply.CreatedAt.ToString("MMM dd, yyyy hh:mm tt")</p>
+
+                                    <!-- Delete Reply -->
+                                    @if (currentUserId == reply.UserId || currentUserId == Model.User.Id)
+                                    {
+                                        <form method="post" action="DeleteComment" class="inline" onsubmit="return confirm('Are you sure you want to delete this comment?');">
+                                            <input type="hidden" name="commentId" value="@reply.Id" />
+                                            <button type="submit" class="text-red-500 text-sm ml-2">Delete</button>
+                                        </form>
+
+                                    }
+                                </div>
+                            }
+                        </div>
+                    }
                 </div>
             }
         }
@@ -72,14 +121,23 @@
             <p class="text-gray-500">No comments yet. Be the first to comment!</p>
         }
     </div>
-    <h4 class="text-lg text-red-600 p-2 text-center">@TempData["CommentError"]</h4>
-    <!-- Add Comment -->
-    <form method="post" action="/Post/AddComment" class="mt-6">
-        <input type="hidden" name="title" value="@Model.Title" />
-        <textarea name="content" rows="3" class="w-full p-2 border rounded-lg" placeholder="Write a comment..." required></textarea>
-        <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Comment</button>
-    </form>
 
+    <!-- Error Message -->
+    <h4 class="text-lg text-red-600 p-2 text-center">@TempData["CommentError"]</h4>
+
+    <!-- Add Comment -->
+    @if (currentUserId != null)
+    {
+        <form method="post" action="/Post/AddComment" class="mt-6">
+            <input type="hidden" name="title" value="@Model.Title" />
+            <textarea name="content" rows="3" class="w-full p-2 border rounded-lg" placeholder="Write a comment..." required></textarea>
+            <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Comment</button>
+        </form>
+    }
+    else
+    {
+        <p class="text-gray-500 mt-4">You must <a href="/Auth/Login" class="text-blue-500">log in</a> to comment.</p>
+    }
 
     <!-- Back Button -->
     <div class="mt-6">
@@ -87,4 +145,28 @@
     </div>
 </div>
 
+<script>
+    function toggleReplyBox(commentId) {
+        var replyBox = document.getElementById("reply-box-" + commentId);
+        if (replyBox.style.display === "none" || replyBox.style.display === "") {
+            replyBox.style.display = "block";
+        } else {
+            replyBox.style.display = "none";
+        }
+    }
 
+        async function deleteComment(commentId) {
+        const response = await fetch('/Post/DeleteComment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `commentId=${commentId}`
+        });
+
+        if (response.ok) {
+            location.reload(); // Refresh after successful deletion
+        } else {
+            alert('Failed to delete comment');
+        }
+    }
+
+</script>

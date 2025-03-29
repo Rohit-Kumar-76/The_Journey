@@ -60,6 +60,7 @@ namespace Rohit_BlogApp.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult UpdateProfile(string username, string userBio, IFormFile? profileImage)
         {
@@ -79,15 +80,18 @@ namespace Rohit_BlogApp.Controllers
             }
 
             // 🛡️ Abusive Words List
-            List<string> abusiveWords = new List<string> { "abuse1", "abuse2", "abuse3" }; // Apne words add karo
+            List<string> abusiveWords = new List<string> {
+                     "sex", "porn", "Chod","Chutiya","bsdk","Bhosdike","gandu","pagal","Lund","Laura","mc","bc","rape", "violence", "kill", "murder", "nude", "abuse", "fuck", "shit", "bitch"
+    };          // Apne words add karo
 
             // 🚦 Username Validation: No spaces, no capitals, cannot start with numbers or special characters (except underscore)
             if (!string.IsNullOrEmpty(username))
             {
-                var usernamePattern = @"^[a-z_][a-z0-9_]*$";
+                var usernamePattern = @"^[a-z_](?:[a-z0-9_]|(?<!\.)\.)*$";
+
                 if (!Regex.IsMatch(username, usernamePattern))
                 {
-                    TempData["ErrorMessage"] = "Invalid username. Use only lowercase letters, numbers, and underscores. Must start with a letter or underscore.";
+                    TempData["ErrorMessage"] = "Invalid username. ";
                     return RedirectToAction("Index", "Profile");
                 }
 
